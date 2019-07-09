@@ -9,6 +9,7 @@
 
 <!-- MarkdownTOC levels="2" autolink="true" -->
 
+- [About this fork](#about-this-fork)
 - [Supported Platforms](#supported-platforms)
 - [Installation](#installation)
 - [Quirks](#quirks)
@@ -16,6 +17,23 @@
 - [Dynamic link parameters](#dynamic-link-parameters)
 
 <!-- /MarkdownTOC -->
+
+## About this fork
+
+This fork has updated firebase versions on iOS and Android platform to matches versions with [@mslobodan/phonegap-plugin-push](https://www.npmjs.com/package/@mslobodan/phonegap-plugin-push)
+
+On iOS it uses pods:
+```
+Firebase/Core: 6.2
+Firebase/DynamicLinks: 6.2
+```
+
+On Android platform it uses dependencies: 
+```
+
+com.google.firebase:firebase-core: 16.0.7
+com.google.firebase:firebase-dynamic-links: 17.0.0
+``` 
 
 ## Supported Platforms
 

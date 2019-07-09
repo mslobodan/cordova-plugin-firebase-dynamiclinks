@@ -1,6 +1,6 @@
 {
-  "name": "cordova-plugin-firebase-dynamiclinks",
-  "version": "2.0.4",
+  "name": "@mslobodan/cordova-plugin-firebase-dynamiclinks",
+  "version": "2.0.4-1.0.1",
   "description": "Cordova plugin for Firebase Dynamic Links",
   "cordova": {
     "id": "cordova-plugin-firebase-dynamiclinks",
@@ -9,9 +9,13 @@
       "android"
     ]
   },
+  "homepage": "https://github.com/mslobodan/cordova-plugin-firebase-dynamiclinks#readme",
+  "bugs": {
+    "url": "https://github.com/mslobodan/cordova-plugin-firebase-dynamiclinks/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chemerisuk/cordova-plugin-firebase-dynamiclinks.git"
+    "url": "git+https://github.com/mslobodan/cordova-plugin-firebase-dynamiclinks.git"
   },
   "scripts": {
     "version": "replace -s 'version=\"(.+)(?=\">)' 'version=\"'$npm_package_version plugin.xml && git add plugin.xml",
@@ -29,9 +33,5 @@
     "cordova-android"
   ],
   "author": "Maksim Chemerisuk <chemerisuk@gmail.com> (https://github.com/chemerisuk)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/chemerisuk/cordova-plugin-firebase-dynamiclinks/issues"
-  },
-  "homepage": "https://github.com/chemerisuk/cordova-plugin-firebase-dynamiclinks#readme"
+  "license": "MIT"
 }
