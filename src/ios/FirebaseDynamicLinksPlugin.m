@@ -1,16 +1,32 @@
+
 #import "FirebaseDynamicLinksPlugin.h"
+
+static NSString *const CUSTOM_URL_SCHEME = @"dlscheme";
+
 
 @implementation FirebaseDynamicLinksPlugin
 
-- (void)pluginInitialize {
-    NSLog(@"Starting Firebase DynamicLinks plugin");
 
-    if (![FIRApp defaultApp]) {
+- (void)pluginInitialize {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finishLaunching:) name:UIApplicationDidFinishLaunchingNotification object:nil];
+}
+
+- (void)finishLaunching:(NSNotification *)notification {
+    [FIROptions defaultOptions].deepLinkURLScheme = CUSTOM_URL_SCHEME;
+    if(![FIRApp defaultApp]) {
         [FIRApp configure];
     }
-
-    self.domainUriPrefix = [self.commandDelegate.settings objectForKey:[@"DYNAMIC_LINK_URIPREFIX" lowercaseString]];
 }
+
+// - (void)pluginInitialize {
+//     NSLog(@">>>Starting Firebase DynamicLinks plugin");
+//
+//     if (![FIRApp defaultApp]) {
+//         NSLog(@">>>Starting Firebase DynamicLinks plugin 11111");
+//         [FIRApp configure];
+//     }
+//     self.domainUriPrefix = [self.commandDelegate.settings objectForKey:[@"DYNAMIC_LINK_URIPREFIX" lowercaseString]];
+// }
 
 - (void)onDynamicLink:(CDVInvokedUrlCommand *)command {
     self.dynamicLinkCallbackId = command.callbackId;
