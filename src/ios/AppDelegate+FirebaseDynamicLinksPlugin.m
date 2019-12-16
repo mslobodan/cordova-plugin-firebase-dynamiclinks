@@ -3,6 +3,7 @@
 #import <objc/runtime.h>
 
 
+// This file is taken from https://github.com/QDOOZ/cordova-plugin-firebase-offline/blob/master/src/ios/AppDelegate%2BFirebaseDynamicLinksPlugin.m
 @implementation AppDelegate (FirebaseDynamicLinksPlugin)
 
 static NSString *const CUSTOM_URL_PREFIX_TO_IGNORE = @"/__/auth/callback";
@@ -70,7 +71,24 @@ static NSString *const CUSTOM_URL_PREFIX_TO_IGNORE = @"/__/auth/callback";
                    restorationHandler:restorationHandler];
 }
 
+// This method is from chemerisuk/cordova-plugin-firebase-dynamiclinks
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *, id> *)options {
+    return FALSE;
+}
 
+// This method is from chemerisuk/cordova-plugin-firebase-dynamiclinks
+- (BOOL)identity_application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *, id> *)options {
+    // always call original method implementation first
+    BOOL handled = [self identity_application:app openURL:url options:options];
+    FirebaseDynamicLinksPlugin* dl = [self.viewController getCommandInstance:@"FirebaseDynamicLinks"];
+    // parse firebase dynamic link
+    FIRDynamicLink *dynamicLink = [[FIRDynamicLinks dynamicLinks] dynamicLinkFromCustomSchemeURL:url];
+    if (dynamicLink) {
+        [dl postDynamicLink:dynamicLink];
+        handled = TRUE;
+    }
+    return handled;
+}
 
 //- (BOOL)application:(UIApplication *)app
 //            openURL:(NSURL *)url
