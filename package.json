@@ -1,9 +1,9 @@
 {
-  "name": "@mslobodan/cordova-plugin-firebase-dynamiclinks",
-  "version": "4.0.2-1.0.3",
+  "name": "mslobodan_cordova-plugin-firebase-dynamiclinks",
+  "version": "4.0.2-2.0.0",
   "description": "Cordova plugin for Firebase Dynamic Links",
   "cordova": {
-    "id": "cordova-plugin-firebase-dynamiclinks",
+    "id": "mslobodan_cordova-plugin-firebase-dynamiclinks",
     "platforms": [
       "ios",
       "android"
@@ -32,6 +32,6 @@
     "cordova-ios",
     "cordova-android"
   ],
-  "author": "Maksim Chemerisuk <chemerisuk@gmail.com> (https://github.com/chemerisuk)",
+  "author": "Slobodan Milicevic (slobodan.milicevic1989@gmail.com)",
   "license": "MIT"
 }
