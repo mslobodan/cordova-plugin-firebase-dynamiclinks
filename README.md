@@ -1,9 +1,8 @@
 # Cordova plugin for [Firebase Dynamic Links](https://firebase.google.com/docs/dynamic-links/)
 
-[![NPM version][npm-version]][npm-url] [![NPM downloads][npm-downloads]][npm-url] [![Twitter][twitter-follow]][twitter-url]
+[![NPM version][npm-version]][npm-url]
 
-| [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)][donate-url] | Your help is appreciated. Create a PR, submit a bug or just grab me :beer: |
-|-|-|
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)][donate-url] | Your help is appreciated. Create a PR, submit a bug or just grab me :beer: |
 
 ## Index
 
@@ -142,9 +141,7 @@ Any create method supports all options below to customize a returned dynamic lin
 }
 ```
 
-[npm-url]: https://www.npmjs.com/package/cordova-plugin-firebase-dynamiclinks
-[npm-version]: https://img.shields.io/npm/v/cordova-plugin-firebase-dynamiclinks.svg
-[npm-downloads]: https://img.shields.io/npm/dm/cordova-plugin-firebase-dynamiclinks.svg
-[twitter-url]: https://twitter.com/chemerisuk
-[twitter-follow]: https://img.shields.io/twitter/follow/chemerisuk.svg?style=social&label=Follow%20me
-[donate-url]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=USD4VHG7CF6FN&source=url
+[npm-url]: https://www.npmjs.com/package/@mslobodan/cordova-plugin-firebase-dynamiclinks
+[npm-version]: https://img.shields.io/npm/v/@mslobodan/cordova-plugin-firebase-dynamiclinks.svg
+[donate-url]: https://paypal.me/SlobodanMilicevic
+                      
