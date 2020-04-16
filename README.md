@@ -17,7 +17,7 @@
 
 [![npm version](https://badge.fury.io/js/mslobodan_cordova-plugin-firebase-dynamiclinks.svg)](https://www.npmjs.com/package/mslobodan_cordova-plugin-firebase-dynamiclinks)
 
-This fork has updated firebase versions on iOS and Android platform to matches versions with [@mslobodan/phonegap-plugin-push](https://www.npmjs.com/package/@mslobodan/phonegap-plugin-push)
+This fork has updated firebase versions on iOS and Android platform to matches versions with [mslobodan_phonegap-plugin-push](https://www.npmjs.com/package/mslobodan_phonegap-plugin-push).
 
 On iOS it uses pods:
 ```
