@@ -21,8 +21,8 @@ This fork has updated firebase versions on iOS and Android platform to matches v
 
 On iOS it uses pods:
 ```
-Firebase/Core: 6.2
-Firebase/DynamicLinks: 6.2
+Firebase/Core: 6.24.0
+Firebase/DynamicLinks: 6.24.0
 ```
 
 On Android platform it uses dependencies: 

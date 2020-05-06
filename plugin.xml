@@ -1,7 +1,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="mslobodan_cordova-plugin-firebase-dynamiclinks"
-        version="4.0.2-2.0.0">
+        version="4.0.2-2.1.0">
 
     <name>FirebaseDynamicLinksPlugin</name>
     <description>Cordova plugin for Firebase Dynamic Links</description>
@@ -92,8 +92,8 @@
         <header-file src="src/ios/FirebaseDynamicLinksPlugin.h"/>
         <source-file src="src/ios/FirebaseDynamicLinksPlugin.m"/>
 
-        <framework src="Firebase/Core" type="podspec" spec="6.2"/>
-        <framework src="Firebase/DynamicLinks" type="podspec" spec="6.2"/>
+        <framework src="Firebase/Core" type="podspec" spec="6.24.0"/>
+        <framework src="Firebase/DynamicLinks" type="podspec" spec="6.24.0"/>
     </platform>
 
 </plugin>
